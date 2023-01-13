@@ -1,0 +1,30 @@
+baseURL: "https://parthw.github.io/"
+languageCode: "en-us"
+title: "parthw"
+theme: "hugo-techblog-theme"
+
+permalinks:
+  posts: "/posts/:year/:month/:slug/"
+
+menu:
+  main:
+    - name: Home
+      url: ""
+      weight: 1
+    - name: Posts
+      url: "posts/"
+      weight: 2
+    - name: Subscribe
+      url: "index.xml"
+      weight: 3
+
+params:
+  description: "Personal Website built using Hugo"
+  footer: "&copy; [Parth Wadhwa](https://www.linkedin.com/in/parth-wadhwa/) {Year} | [Github](https://github.com/parthw) | [Twitter](https://twitter.com/_parthwadhwa)"
+
+markup:
+  highlight:
+    codeFences: true
+  goldmark:
+    renderer:
+      unsafe: true

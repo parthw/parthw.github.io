@@ -1,0 +1,3 @@
+[submodule "themes/hugo-techblog-theme"]
+	path = themes/hugo-techblog-theme
+	url = https://github.com/parthw/hugo-techblog-theme
