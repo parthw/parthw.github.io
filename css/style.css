@@ -63,6 +63,10 @@ footer {
   text-align: center;
 }
 
+b {
+  color: #c7254e;
+}
+
 .title {
   padding-top: 2%;
   line-height: 1em;
@@ -98,7 +102,7 @@ pre {
 a {
   color: #0071bc;
   background-color: transparent;
-  font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "PT Serif", serif;
   text-decoration: none;
   margin: 0 0.12em;
 }
