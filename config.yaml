@@ -4,11 +4,11 @@ title: "parthw"
 theme: "hugo-techblog-theme"
 
 permalinks:
-  posts: "/posts/:year/:month/:slug/"
+  posts: "/posts/:year/:month/:day/:slug/"
 
 menu:
   main:
-    - name: Home
+    - name: About
       url: ""
       weight: 1
     - name: Posts
@@ -24,7 +24,7 @@ params:
 
 markup:
   highlight:
-    codeFences: true
+    codeFences: false
   goldmark:
     renderer:
       unsafe: true
