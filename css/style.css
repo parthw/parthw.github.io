@@ -67,6 +67,11 @@ b {
   color: #c7254e;
 }
 
+strong {
+  color: #c7254e;
+}
+
+
 .title {
   padding-top: 2%;
   line-height: 1em;
