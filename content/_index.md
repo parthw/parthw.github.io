@@ -7,11 +7,11 @@ layout: home
 
 <br/> <br/>
 
-<b>Hello, I'm Parth Wadhwa. </b>
+<b>Hello, I'm Parth Wadhwa, </b>
 <br/>
 Site Reliability Engineer.
 <br/>
 
-I work at Blinkit(formerly grofers), an e-commerce company based in India.
+I work at [Blinkit(formerly grofers)](https://blinkit.com), an e-commerce company based in India.
 
-In this site, I will be sharing my thoughts and experiences on various topics related to SRE, with a focus on Python, Golang, Terraform and other technologies that I find interesting. I will also be sharing my approach to troubleshooting, monitoring and improving reliability of the systems. I hope you find my posts informative and enjoyable to read.
+In this site, I will be sharing my thoughts and experiences on various topics related to SRE, with a focus on Python, Golang, Kubernetes, Terraform and other technologies that I find interesting. I will also be sharing my approach to troubleshooting, monitoring and improving reliability of the systems. I hope you find my posts informative and enjoyable to read.
