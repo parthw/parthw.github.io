@@ -27,18 +27,19 @@ h4 {
   font-family: "Montserrat", Arial, sans-serif;
 }
 
-div nav {
-  position: fixed;
+nav {
+  position: relative;
+  display: block;
   overflow: hidden;
   text-align: right;
+  padding: 0%;
   top: 0;
-  width: 90%;
-  padding-bottom: 0;
+  width: 100%;
   background-color: #fff;
   max-width: 1280px;
   border-bottom: 2px solid;
 }
-div nav ul li {
+nav ul li {
   display: inline-block;
 }
 
@@ -49,18 +50,21 @@ footer {
 
 .title {
   padding-top: 2%;
-  margin-bottom: 4%;
+  line-height: 1em;
+  margin-bottom: 2%;
   font-weight: 570;
   font-family: "Montserrat", Arial, sans-serif;
-  margin-top: 5%;
+  margin-top: 1%;
   font-size: 2.5em;
+  color: #c7254e;
 }
 footer a {
   text-decoration: none;
 }
 
 hr {
-  box-sizing: content-box;
+  width: 90%;
+  max-width: 1280px;
   height: 0;
   overflow: visible;
 }
@@ -127,7 +131,7 @@ video {
 table {
   border-collapse: collapse;
   font-size: 0.9em;
-  min-width: 400px;
+  min-width: 200px;
   width: 60%;
   margin: auto;
   border: 1px solid #666;
