@@ -2,6 +2,8 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+  min-height: 100%;
+  position: relative;
 }
 
 body {
@@ -11,10 +13,12 @@ body {
   margin: auto;
   padding: 1em;
   line-height: 1.5em;
+  margin-bottom: 50px;
 }
 
 center {
   margin-top: 5%;
+  margin-bottom: 5%;
   padding-right: 20%;
   padding-left: 20%;
 }
@@ -50,7 +54,12 @@ nav ul li {
 }
 
 footer {
-  margin-top: 5%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
   text-align: center;
 }
 
