@@ -3,24 +3,21 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <title>A Plain Markdown Post | parthw</title>
-<link rel=stylesheet href=/css/style.css> <link rel=stylesheet href=/css/fonts.css>
+<link href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css rel=stylesheet>
+<link rel=stylesheet href=/css/style.css>
 </head>
 <body>
+<div>
 <nav>
-<ul class=menu>
-<li><a href=/>Home</a></li>
+<ul>
+<li><a href=/>About</a></li>
 <li><a href=/posts/>Posts</a></li>
 <li><a href=/index.xml>Subscribe</a></li>
 </ul>
-<hr>
-</nav>
-SINGLE
-<div class=article-meta>
-<h1><span class=title>A Plain Markdown Post</span></h1>
-<h2 class=author>Parth Wadhwa</h2>
-<h2 class=date>2016/02/14</h2>
 </div>
-<main><p>This sample post is mainly for <a href=https://github.com/rstudio/blogdown><strong>blogdown</strong></a> users. If you do not use <strong>blogdown</strong>, you can skip the first section.</p>
+</nav>
+<div class=title>A Plain Markdown Post</div>
+<p>This sample post is mainly for <a href=https://github.com/rstudio/blogdown><strong>blogdown</strong></a> users. If you do not use <strong>blogdown</strong>, you can skip the first section.</p>
 <h1 id=1-markdown>1. Markdown</h1>
 <p>This is a post written in plain Markdown (<code>*.md</code>) instead of R Markdown (<code>*.Rmd</code>). The major differences are:</p>
 <ol>
@@ -34,10 +31,11 @@ SINGLE
 <li><input disabled type=checkbox> &mldr;</li>
 <li><input disabled type=checkbox> Profit!</li>
 </ul>
-<p>Similarly, Blackfriday does not support LaTeX math and Pandoc does. I have added the MathJax support to this theme (<a href=https://github.com/yihui/hugo-xmin>hugo-xmin</a>) but there is a caveat for plain Markdown posts: you have to include math expressions in a pair of backticks (inline: <code>`$ $`</code>; display style: <code>`$$ $$`</code>), e.g., <code>$S_n = \sum_{i=1}^n X_i$</code>.^[This is because we have to protect the math expressions from being interpreted as Markdown.] For R Markdown posts, you do not need the backticks, because Pandoc can identify and process math expressions.</p>
+<p>Similarly, <code>Blackfriday does not support</code> LaTeX math and Pandoc does. I have added the MathJax support to this theme (<a href=https://github.com/yihui/hugo-xmin>hugo-xmin</a>) but there is a caveat for plain Markdown posts: you have to include math expressions in a pair of backticks (inline: <code>`$ $`</code>; display style: <code>`$$ $$`</code>), e.g., <code>$S_n = \sum_{i=1}^n X_i$</code>.^[This is because we have to protect the math expressions from being interpreted as Markdown.] For R Markdown posts, you do not need the backticks, because Pandoc can identify and process math expressions.</p>
 <p>When creating a new post, you have to decide whether the post format is Markdown or R Markdown, and this can be done via the <code>rmd</code> argument of the function <code>blogdown::new_post()</code>, e.g.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-r data-lang=r>blogdown<span style=color:#f92672>::</span><span style=color:#a6e22e>new_post</span>(<span style=color:#e6db74>&#34;Post Title&#34;</span>, rmd <span style=color:#f92672>=</span> <span style=color:#66d9ef>FALSE</span>)
-</code></pre></div><p>Actually I recommend you to use the RStudio addin &ldquo;New Post&rdquo; instead:</p>
+<pre><code class=language-r>blogdown::new_post(&quot;Post Title&quot;, rmd = FALSE)
+</code></pre>
+<p>Actually I recommend you to use the RStudio addin &ldquo;New Post&rdquo; instead:</p>
 <p><img src=https://bookdown.org/yihui/blogdown/images/new-post.png alt="RStudio addin New Post"></p>
 <h1 id=2-sample-text>2. Sample Text</h1>
 <h2 id=second-level-header>Second-level header</h2>
@@ -50,21 +48,22 @@ SINGLE
 <p>Quisque mattis volutpat lorem vitae feugiat. Praesent porta est quis porta imperdiet. Aenean porta, mi non cursus volutpat, mi est mollis libero, id suscipit orci urna a augue. In fringilla euismod lacus, vitae tristique massa ultricies vitae. Mauris accumsan ligula tristique, viverra nulla sed, porta sapien. Vestibulum facilisis nec nisl blandit convallis. Maecenas venenatis porta malesuada. Ut ac erat tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla sodales quam sit amet tincidunt egestas. In et turpis at orci vestibulum ullamcorper. Aliquam sed ante libero. Sed hendrerit arcu lacus.</p>
 </blockquote>
 <p>Some code (with a drop-shadow effect):</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>(<span style=color:#66d9ef>function</span> () {
-  <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>quotes</span> <span style=color:#f92672>=</span> document.<span style=color:#a6e22e>getElementsByTagName</span>(<span style=color:#e6db74>&#34;blockquote&#34;</span>),
-    <span style=color:#a6e22e>i</span>,
-    <span style=color:#a6e22e>quote</span>;
-  <span style=color:#66d9ef>for</span> (<span style=color:#a6e22e>i</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; <span style=color:#a6e22e>i</span> <span style=color:#f92672>&lt;</span> <span style=color:#a6e22e>quotes</span>.<span style=color:#a6e22e>length</span>; <span style=color:#a6e22e>i</span><span style=color:#f92672>++</span>) {
-    <span style=color:#a6e22e>quote</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>quotes</span>[<span style=color:#a6e22e>i</span>];
-    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>n</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>quote</span>.<span style=color:#a6e22e>children</span>.<span style=color:#a6e22e>length</span>;
-    <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>n</span> <span style=color:#f92672>===</span> <span style=color:#ae81ff>0</span>) <span style=color:#66d9ef>continue</span>;
-    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>el</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>quote</span>.<span style=color:#a6e22e>children</span>[<span style=color:#a6e22e>n</span> <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>];
-    <span style=color:#66d9ef>if</span> (<span style=color:#f92672>!</span><span style=color:#a6e22e>el</span> <span style=color:#f92672>||</span> <span style=color:#a6e22e>el</span>.<span style=color:#a6e22e>nodeName</span> <span style=color:#f92672>!==</span> <span style=color:#e6db74>&#34;P&#34;</span>) <span style=color:#66d9ef>continue</span>;
-    <span style=color:#75715e>// right-align a quote footer if it starts with ---
-</span><span style=color:#75715e></span>    <span style=color:#66d9ef>if</span> (<span style=color:#e6db74>/^—/</span>.<span style=color:#a6e22e>test</span>(<span style=color:#a6e22e>el</span>.<span style=color:#a6e22e>textContent</span>)) <span style=color:#a6e22e>el</span>.<span style=color:#a6e22e>style</span>.<span style=color:#a6e22e>textAlign</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;right&#34;</span>;
+<pre><code class=language-js>(function () {
+  var quotes = document.getElementsByTagName(&quot;blockquote&quot;),
+    i,
+    quote;
+  for (i = 0; i &lt; quotes.length; i++) {
+    quote = quotes[i];
+    var n = quote.children.length;
+    if (n === 0) continue;
+    var el = quote.children[n - 1];
+    if (!el || el.nodeName !== &quot;P&quot;) continue;
+    // right-align a quote footer if it starts with ---
+    if (/^—/.test(el.textContent)) el.style.textAlign = &quot;right&quot;;
   }
 })();
-</code></pre></div><p>A table (centered by default):</p>
+</code></pre>
+<p>A table (centered by default):</p>
 <table>
 <thead>
 <tr>
@@ -123,10 +122,13 @@ SINGLE
 <p>An image (automatically centered when it is appropriate):</p>
 <p><img src=https://slides.yihui.org/gif/happy-elmo.gif alt="Happy Elmo"></p>
 <p>Looks good?</p>
-</main>
 <footer>
+<script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<div>
 <hr>
 © <a href=https://www.linkedin.com/in/parth-wadhwa/>Parth Wadhwa</a> 2023 | <a href=https://github.com/parthw>Github</a> | <a href=https://twitter.com/_parthwadhwa>Twitter</a>
+</div>
 </footer>
 </body>
 </html>
