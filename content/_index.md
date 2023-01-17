@@ -14,4 +14,4 @@ Site Reliability Engineer.
 
 I work at [Blinkit(formerly grofers)](https://blinkit.com), an e-commerce company based in India.
 
-In this site, I will be sharing my thoughts and experiences on various topics related to SRE, with a focus on Python, Golang, Kubernetes, Terraform and other technologies that I find interesting. I will also be sharing my approach to troubleshooting, monitoring and improving reliability of the systems. I hope you find my posts informative and enjoyable to read.
+In this site, I will be sharing my thoughts and experiences on various topics related to Engineering, with a focus on Python, Golang, Kubernetes, Terraform and other technologies that I find interesting. I will also be sharing books summaries, my approach to troubleshooting, monitoring and improving reliability of the systems. I hope you find my posts informative and enjoyable to read.
