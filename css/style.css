@@ -9,7 +9,7 @@ html {
 body {
   max-width: 1280px;
   font-family: "PT Serif", serif;
-  width: 90%;
+  width: 80%;
   margin: auto;
   padding: 1em;
   line-height: 1.5em;
@@ -71,7 +71,6 @@ strong {
   color: #c7254e;
 }
 
-
 .title {
   padding-top: 2%;
   line-height: 1em;
@@ -87,7 +86,7 @@ footer a {
 }
 
 hr {
-  width: 90%;
+  width: 80%;
   max-width: 1280px;
   height: 0;
   overflow: visible;
