@@ -1,7 +1,7 @@
 ---
 title: Summary of "The New One Minute Manager"
 author: Parth Wadhwa
-date: "2017-01-17"
+date: "2023-01-17"
 ---
 
 Hello, yesterday I got my hands on one of the bestselling books - "The New One Minute Manager".
