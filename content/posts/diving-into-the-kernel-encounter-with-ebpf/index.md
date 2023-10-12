@@ -10,7 +10,7 @@ With this newfound enthusiasm, I'm excited to announce the launch of my own blog
 
 ## The Linux Kernel
 
-To understand eBPF, you will need to understand what is kernel, what is user space and what is the difference between user space and kernel.
+To understand eBPF, you will need to understand what is kernel, what is user space and what is system call.
 
 The Linux kernel is the software layer that acts as an intermediary between applications and the underlying hardware on which they operate. Our applications run in an unprivileged layer known as 'user space', and they lack direct access to hardware. Instead, applications communicate with the hardware through a system call interface, where they request the kernel to facilitate interactions with the hardware on their behalf. This is illustrated as -
 
