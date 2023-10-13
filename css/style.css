@@ -132,6 +132,8 @@ code {
   color: #c7254e;
   background-color: #ebf5fb;
   border-radius: 4px;
+  white-space: pre-line;
+  word-wrap: break-word;
 }
 
 blockquote {
