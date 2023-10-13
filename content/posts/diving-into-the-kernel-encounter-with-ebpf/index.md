@@ -12,7 +12,7 @@ With this newfound enthusiasm, I'm excited to announce the launch of my own blog
 
 To understand eBPF, you will need to understand what is kernel, what is user space and what is system call.
 
-The Linux kernel is the software layer that acts as an intermediary between applications and the underlying hardware on which they operate. Our applications run in an unprivileged layer known as 'user space', and they lack direct access to hardware. Instead, applications communicate with the hardware through a system call interface, where they request the kernel to facilitate interactions with the hardware on their behalf. The kernel is responsible for handling scheduling, concurreny of processes, memory management etc. This is better illustrated in [nutanixbibile.com](https://www.nutanixbible.com/0-a-brief-lesson-in-history.html) as -
+The Linux kernel is the software layer that acts as an intermediary between applications and the underlying hardware on which they operate. Our applications run in an unprivileged layer known as 'user space', and they lack direct access to hardware. Instead, applications communicate with the hardware through a system call interface, where they request the kernel to facilitate interactions with the hardware on their behalf. The resposibilities of kernel also include handling scheduling, concurreny of processes, memory management etc. This is better illustrated in [nutanixbibile.com](https://www.nutanixbible.com/0-a-brief-lesson-in-history.html) as -
 
 ![user_kernel](user_kernel.png)
 
@@ -20,7 +20,7 @@ The Linux kernel is the software layer that acts as an intermediary between appl
 
 Extended Berkeley Packet Filter (eBPF) is a Linux kernel feature that makes it possible to run sandboxed programs inside the kernel space in a safe and controlled manner, allowing us to modify and extend the kernel without having to alter and re-compiling the kernel’s source code. `Don't judge it by name, it is not just a packet filter anymore.`
 
-It was introduced in the Linux kernel version 3.15 in 2014. It was originally developed as an extension of the Berkeley Packet Filter (BPF) to allow for more complex and dynamic filtering of network packets. Since then, eBPF has evolved to become a powerful and flexible tool for tracing, profiling, security analysis etc.
+It was introduced in the Linux kernel version 3.15 in 2014. It was originally developed as an extension of the Berkeley Packet Filter (BPF) to allow more complex and dynamic filtering of network packets. Since then, eBPF has evolved to become a powerful and flexible tool for tracing, profiling, security analysis etc.
 
 > In Brendan Gregg’s own words: "eBPF does to Linux what JavaScript does to HTML."
 
