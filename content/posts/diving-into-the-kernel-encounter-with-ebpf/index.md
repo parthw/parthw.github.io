@@ -30,6 +30,8 @@ In the past, if you needed a specific feature in the kernel, the process involve
 
 An alternative approach was to utilize kernel modules, which could be loaded or unloaded on demand. These modules offered a way to tweak the behavior of the kernel. However, writing a kernel module required utmost caution because any mistakes or crashes in the module could lead to a kernel panic, taking down the entire system.
 
+The eBPF verifier enables the safe execution of a program. This means that if the program encounters any issues, it will not lead to a system crash or kernel panic.
+
 Without further ado, let us set up our development environment and learn by doing, as it is more exciting.
 ## Development environment
 
@@ -87,6 +89,6 @@ If you see the output as `Hello, World!`, then the setup is correct.
 I remember the first time I ran this command. It was like entering a mysterious territory full of new possibilities. Seeing the "Hello, World!" output gave me the confidence to dig deeper. And I'm hooked.
 ## Upcoming post
 
-In my next post, I'll walk you through the steps of creating your first "Hello, World!" eBPF program, line by line. I'll also introduce some of the more exciting eBPF constructs, such as probes, and how to use them to write useful eBPF programs.
+In my next post, I'll walk you through the steps of creating your first "Hello, World!" eBPF program, line by line. I'll also introduce some of the more exciting eBPF constructs, such as maps, kernel probes and how to use them to write useful eBPF programs.
 
 Thanks for reading and stay tuned!
