@@ -8,13 +8,12 @@ html {
 
 body {
   max-width: 1280px;
-  font-family: "Fira Sans",serif;
+  font-family: "PT Serif", serif;
   width: 80%;
   margin: auto;
   padding: 1em;
   line-height: 1.5em;
   margin-bottom: 50px;
-  color: #333333;
 }
 
 center {
@@ -27,19 +26,15 @@ center {
 h1 {
   padding-top: 2%;
   font-family: "Montserrat", Arial, sans-serif;
-  color: #000000;
 }
 h2 {
   font-family: "Montserrat", Arial, sans-serif;
-  color: #000000;
 }
 h3 {
   font-family: "Montserrat", Arial, sans-serif;
-  color: #000000;
 }
 h4 {
   font-family: "Montserrat", Arial, sans-serif;
-  color: #000000;
 }
 
 nav {
@@ -50,6 +45,7 @@ nav {
   padding: 0%;
   top: 0;
   width: 100%;
+  background-color: #fff;
   max-width: 1280px;
   border-bottom: 2px solid;
 }
@@ -84,7 +80,6 @@ strong {
   margin-top: 1%;
   font-size: 2.5em;
   color: #c7254e;
-  padding-bottom: 2%;
 }
 footer a {
   text-decoration: none;
@@ -111,6 +106,7 @@ pre {
 a {
   color: #0071bc;
   background-color: transparent;
+  font-family: "PT Serif", serif;
   text-decoration: none;
   margin: 0 0.12em;
 }
@@ -132,8 +128,6 @@ code {
   color: #c7254e;
   background-color: #ebf5fb;
   border-radius: 4px;
-  white-space: pre-line;
-  word-wrap: break-word;
 }
 
 blockquote {
