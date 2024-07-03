@@ -11,4 +11,4 @@ ARCH=ARM64
 wget -O ${HUGO_VERSION}.tar.gz https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux-${ARCH}.tar.gz && \
     tar xf ${HUGO_VERSION}.tar.gz && \
     sudo mv hugo /usr/bin/hugo && \
-    rm xf ${HUGO_VERSION}.tar.gz hugo
+    rm ${HUGO_VERSION}.tar.gz hugo
