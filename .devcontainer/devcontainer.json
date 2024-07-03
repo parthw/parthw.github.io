@@ -1,0 +1,34 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/python:3.12-bullseye",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "ms-python.python",
+        "Gruntfuggly.todo-tree",
+        "esbenp.prettier-vscode",
+        "waderyan.gitblame",
+        "visualstudioexptteam.vscodeintellicode-completions",
+        "visualstudioexptteam.vscodeintellicode-insiders",
+        "ms-python.isort",
+        "ms-toolsai.datawrangler",
+        "davidanson.vscode-markdownlint"
+      ]
+    },
+    "settings": {
+      "python.defaultInterpreterPath": "/usr/local/bin/python",
+      "html.format.templating": true
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    },
+    "ghcr.io/devcontainers/features/git:1": {
+      "version": "latest",
+      "ppa": "false"
+    }
+  },
+  "postCreateCommand": "sh .devcontainer/post-create.sh",
+  "remoteUser": "vscode"
+}
